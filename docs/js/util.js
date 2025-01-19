@@ -36,7 +36,7 @@ export function assert_existence(item)
 
 /**
  * 
- * @param {Element | null} element 
+ * @param {Element | Node | null} element 
  * @returns {HTMLElement}
  */
 export function assert_HTML(element)

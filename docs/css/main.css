@@ -4,19 +4,6 @@
 	box-sizing: border-box;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
 body {
 
 	width: 100%;
@@ -31,7 +18,7 @@ body {
 	.container {
 		--rows: 0;
 		--columns: 0;
-		--block-size: 1rem;
+		--block-size: 2rem;
 
 		width: 100%;
 		height: 100%;
@@ -50,11 +37,15 @@ body {
 			border: 1px solid rgb(255 255 255 / 1%);
 			transition: background-color 1000ms ease-in-out;
 			background-color: #0d4b9b;
+
+			&.movement {
+				transition-duration: 0ms;
+				background-color: #4b85d1;
+			}
 	
-			&.hover,
+			
 			&:hover {
 				transition-duration: 0ms;
-	
 				background-color: #83ade3;
 			}
 	
